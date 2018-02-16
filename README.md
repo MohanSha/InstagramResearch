@@ -26,5 +26,40 @@ https://www.instagram.com/?__a=1
 https://www.instagram.com/<userame>/?__a=1
 ```
 
+## GraphQL modifiable data endpoints
+
+**Schema:**
+```bash
+https://www.instagram.com/graphql/query/?query_id=<query_id>&variables=%7B<parameters>%7D
+```
+
+| QueryID | Endpoint |
+|---------|----------|
+|17875800862117404|posts for tags|
+|17874545323001329|user following|
+|17851374694183129|user followers|
+|17888483320059182|user posts|
+|17864450716183058|likes on posts|
+|17852405266163336|comments on posts|
+|17842794232208280|posts on feed|
+|17847560125201451|feed profile suggestions|
+|17863787143139595|post suggestions|
+
+Available parameters:
+- id (user_id)
+- tag_name (only one needed for explore tags)
+- first (amount of nodes to get)
+- after (haven't completely figured out, but looks like this is for the offset, use the cursor field)
+- shortcode (used for the "on posts" queries like "likes on post")
+
+Needed for the feedpage
+- filter_followed_friends
+- fetch_suggested_count
+- fetch_like
+- fetch_media_count
+- fetch_comment_count
+- fetch_media_item_count
+- has_stories
+
 
 Stay Tuned for updates 

@@ -5,6 +5,10 @@
 
 [![MIT license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/MohanSha/TwitterBot/blob/master/LICENSE)
 
+Note: This is just an assumption, but the GraphQL endpoints most likely are the same for the mobile webpage. This means that once it's chagned in the code, we can easily switch to the mobile version which allows us to build a post scheduler into Instagram.    
+The final goal for this is to have a full documentation of the GraphQL Endpoints that get used by the Instagram page.
+
+
 ## Basic Information that are displayed when accessing a page
 
 **Schema:**

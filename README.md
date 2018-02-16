@@ -2,6 +2,7 @@
 
 # InstagramResearch
 📄 Research repository for new instagram project
+
 [![MIT license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/MohanSha/TwitterBot/blob/master/LICENSE)
 
 ## Basic Information that are displayed when accessing a page
@@ -94,6 +95,15 @@ https://www.instagram.com/graphql/query/?query_id=17847560125201451&variables={%
 # Post suggestions for user
 https://www.instagram.com/graphql/query/?query_id=17863787143139595&variables={%22first%22:<num_of_posts>}
 ```
+> Note: This uses URLEncoded for the variables
+
+|Sybmol|URLEncoded|
+|------|----------|
+|,|%2C|
+|}|%7D|
+|{|%7B|
+|:|%3A|
+|"|%22|
 
 
 Stay Tuned for updates 

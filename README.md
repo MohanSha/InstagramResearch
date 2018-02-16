@@ -106,4 +106,13 @@ https://www.instagram.com/graphql/query/?query_id=17863787143139595&variables={%
 |"|%22|
 
 
+## Full "pipeline" to get a JSON that contains all the information of a profile
+> This will help to create metrics and graphs in the long run
+
+**TODO**   
+- Get the bio, followers, followings and other profile information
+- Get all the posts
+- For each post, get the description, likes, comments and all the already given post details
+
+
 Stay Tuned for updates 

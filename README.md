@@ -61,5 +61,39 @@ Needed for the feedpage
 - fetch_media_item_count
 - has_stories
 
+**[Examples](./custom_endpoint)**
+
+```bash
+# Explore tags
+https://www.instagram.com/graphql/query/?query_id=17875800862117404&variables=%7B%22tag_name%22%3A%22<tag_name>%22%2C%22first%22%3A<num_of_posts>%7D
+
+# Note: Still have to figure out how to get this data without using selenium once logged in.
+# **Only works with logged in user**
+
+# User profile following
+https://www.instagram.com/graphql/query/?query_id=17874545323001329&variables=%7B%22id%22%3A%22<user_id>%22%2C%22first%22%3A<num_of_following>%7D
+
+# User profile followers
+https://www.instagram.com/graphql/query/?query_id=17874545323001329&variables=%7B%22id%22%3A%22<user_id>%22%2C%22first%22%3A<num_of_followers>%7D
+
+# User profile posts
+https://www.instagram.com/graphql/query/?query_id=17888483320059182&variables=%7B%22id%22%3A%22<user_id>%22%2C%22first%22%3A<num_of_posts>%7D
+
+# Post page likes
+https://www.instagram.com/graphql/query/?query_id=17864450716183058&variables=%7B%22shortcode%22%3A%22<id_of_post>%22X2C%22first%22%3A<num_of_likes>%7D
+
+# Post page comments
+https://www.instagram.com/graphql/query/?query_id=17852405266163336&variables={"shortcode":"<id_of_post>","first":<num_of_comments>}
+
+# Feed posts
+https://www.instagram.com/graphql/query/?query_id=17842794232208280&variables={%22fetch_media_item_count%22:<num_of_posts>,%22fetch_comment_count%22:<num_of_comments_per_post>,%22fetch_like%22:<num_of_likers_per_post>}
+
+# Profile suggestios in feed
+https://www.instagram.com/graphql/query/?query_id=17847560125201451&variables={%22fetch_media_count%22:<num_of_posts_per_suggestion>,%22fetch_suggested_count%22:<num_of_suggestions>,%22filter_followed_friends%22:true, "has_stories":false}
+
+# Post suggestions for user
+https://www.instagram.com/graphql/query/?query_id=17863787143139595&variables={%22first%22:<num_of_posts>}
+```
+
 
 Stay Tuned for updates 

@@ -3,7 +3,13 @@
 # InstagramResearch
 📄 Research repository for new instagram project
 
+> Disclaimer: This repository is only for educational purpose. Anyone who abuses the information provided here does so on his own behalf. I am in no way responsible for it.
+
 [![MIT license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/MohanSha/TwitterBot/blob/master/LICENSE)
+
+This repository documents the, up to this point, found endpoints that could be useful for Instagram automation to improve it's fault tolerance and performance.    
+
+The goal is to not only remove the unnecessary use of selenium to find elements to click but also improve the amount of data that can be retrieved in each run. Once we reach a point where a profile/post only has to be opened to actually like, comment  and follow the profile, we minimized the amount of elements that need an upgrade on an Instagram webpage change.    
 
 Note: This is just an assumption, but the GraphQL endpoints most likely are the same for the mobile webpage. This means that once it's chagned in the code, we can easily switch to the mobile version which allows us to build a post scheduler into Instagram.    
 The final goal for this is to have a full documentation of the GraphQL Endpoints that get used by the Instagram page.

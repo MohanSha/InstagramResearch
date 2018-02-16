@@ -4,6 +4,27 @@
 📄 Research repository for new instagram project
 [![MIT license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/MohanSha/TwitterBot/blob/master/LICENSE)
 
-Working on new project will update once usable
+## Basic Information that are displayed when accessing a page
+
+**Schema:**
+```bash
+https://instagram.com/<path>?__a=1
+```
+
+**[Examples](./basic_endpoint)**
+```bash
+# Explore tags
+https://www.instagram.com/explore/tags/<tag_name>/?__a=1
+
+# Post page
+https://www.instagram.com/p/<id_of_post>/?__a=1
+
+# When logged in, feed
+https://www.instagram.com/?__a=1
+
+# Own/other profiles
+https://www.instagram.com/<userame>/?__a=1
+```
+
 
 Stay Tuned for updates 
